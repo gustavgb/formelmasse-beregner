@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kemi - Mængdeberegner</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                text-align: center;
+            }
+            #inp {
+                width: 225px;
+                border: none;
+            }
+            #header {
+                text-align: center;
+            }
+            #result {
+                font-size: 14.5px;
+            }
+            #tableResult {
+                width: 100%;
+                height: 250px;
+            }
+            .tableInput {
+                margin: 0px;
+            }
+            td {
+                padding: 0px;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <div id="header">
+            <h1>Molarmasse beregner</h1>
+            <i>Udviklet af Gustav Burchardt</i>
+        </div>
+        <br /><br />
+        
+        M(<input id="inp" type="text" placeholder="Indtast formelenhed (f.eks. C6H12O6)"/>)
+        <input class="button" type="button" value="Udregn stoffets molare masse" onclick="returnM()" />
+        <p id="result"></p>
+        
+        <!--<br />
+        <strong>Tabel udfylder</strong>
+        <input type="text" id="wInp">
+        <input type="button" class="button" onclick="updateTable()"><br /><br />
+        <table id="tableResult" border=1></table>-->
+        
+        <script type="text/javascript" src="script.js"></script>
+    
+    </body>
+</html>
